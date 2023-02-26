@@ -1,0 +1,234 @@
+// HEADER links //
+
+.nav{
+    display: none;
+    @media screen and (min-width:768px){
+        display: flex; 
+        & > .nav__item:not(:last-child){
+            margin-right: 53px;
+        }
+    }
+    @media screen and (min-width:1200px){
+        display: flex; 
+        & > .nav__item:not(:last-child){
+            margin-right: 53px;
+        }
+    }
+
+}
+.nav__link{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $time $time-function;
+    
+    
+    &:hover,
+    &:focus{
+    color: $active-and-hover-color;
+   }
+
+   &--active{
+    position: relative;
+    transition: color $time $time-function;
+    color: $active-and-hover-color;
+   }
+
+   &--active::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $active-and-hover-color;
+    position: absolute;
+    border-radius: 2px;
+    left:0;
+    bottom: 0;
+   }
+}
+
+.contacts{
+    
+    display: none;
+
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-direction: column;
+
+    }
+    @media screen and (min-width:1200px){
+        display: flex;
+        margin-left: auto;
+        flex-direction: row;
+        & > .contacts__item:first-child{
+            margin-right: 50px;
+        }
+    }
+}
+.contacts__link{
+    text-decoration: none;
+    color: $contact-info-header;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    transition: color $time $time-function;
+
+    &:hover,
+    &:focus{
+        color: $active-and-hover-color;
+    }
+    @media screen and (min-width:768px){
+        padding-top: 0px;
+        padding-bottom: 0px;
+        
+    }
+}
+.contacts__link--email{
+    @media screen and (min-width:768px){
+     
+        padding-bottom: 10px;
+        
+    }
+}
+
+.contacts__icon{
+    fill: currentColor;
+    margin-right: 10px;
+    transition: color $time $time-function;
+
+    &:hover{
+        fill: $active-and-hover-color
+    }
+}
+
+
+// FOOTER LINKS
+.address{
+    text-align: center;
+    @media screen and (min-width:1200px){
+        text-align: left;
+        
+    }
+}
+
+.address__link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $address-footer-color;
+    font-style: normal;
+    align-items: center;
+}
+
+.address__contact{
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $contact-info-footer;
+    transition: color $time $time-function;
+    
+
+    &:hover,
+    &:active,
+    &:focus{
+        color: $active-and-hover-color;
+    }
+}
+.address__item{
+    margin-bottom: 2px;
+}
+
+.webstudio-address{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+@media screen and (min-width:1200px){
+        margin-right: 70px;
+        margin-bottom: 0px;
+    }
+   
+}
+.social-media {
+    display: flex;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.social-media__item {
+    margin-right: 10px;
+}
+
+.social-media__link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $address-footer-color;
+    transition: color $time $time-function, background-color $time $time-function;
+
+    &:hover,
+    &:focus{
+        background-color: $active-and-hover-color;
+        color: $address-footer-color;
+    }
+}
+
+.social-media__svg{
+    fill: currentColor;
+}
+
+
+// BRAND links
+
+
+.brand__link{
+    width: 200px;
+    height: 92px;
+    border: 1px solid $regular-customer-brnads-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: $regular-customer-brnads-color;
+    transition: color $time $time-function, border $time $time-function;
+
+    &:hover,
+    &:focus{
+        color: $active-and-hover-color;
+        border: 1px solid $active-and-hover-color;
+    }
+    @media screen and (min-width: 768px){
+        width: 226px;
+       
+    }
+    @media screen and (min-width: 1200px){
+        width: 170px;
+    }
+}
+
+.brand__icon{
+    fill:currentColor;
+}
+.brand__link:hover,
+.brand__link:focus{
+    color: $active-and-hover-color;
+    border: 1px solid $active-and-hover-color;
+
+}

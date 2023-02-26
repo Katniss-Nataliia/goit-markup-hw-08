@@ -1,0 +1,55 @@
+.hero-section{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effectiveSolutionBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:200px;
+    padding-bottom: 200px;
+    background-position: center;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-heading-color;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:1200px){
+        font-size: 44px;
+    }
+}
+
+.hero-section__request-service-bttn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: $webstudio-color;
+    color: $request-studio-color;
+    border-radius: 4px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    transition: box-shadow $time $time-function, background-color $time $time-function;
+    cursor: pointer;
+   
+    &:hover,
+    &:focus{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: $request-our-service-hover-color;
+    }
+}
+
+
+
