@@ -16,21 +16,26 @@
 }
 .modal-window{
     background-color: $main-heading-color;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
+    @media screen and (min-width:1200px){
+        width: 528px;
+        height: 581px;
+        
+    }
     
 }
 .modal-window__close-bttn{
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    left: 490px;
     top: 8px;
+    right: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $main-bg-color;
     border-radius: 10%;

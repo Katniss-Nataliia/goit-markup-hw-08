@@ -1,11 +1,25 @@
 .hero-section{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effectiveSolutionBG.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-bg.jpg");
+    background-size:cover;
     background-repeat: no-repeat;
-    padding-top:200px;
-    padding-bottom: 200px;
+    padding-top:118px;
+    padding-bottom: 118px;
     background-position: center;
+
+    @media screen and (min-width:1200px){
+        padding-top:200px;
+        padding-bottom: 200px;
+        
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-bg@2x.jpg");
+    }
 }
+
+
 .hero-container{
     display: flex;
     flex-direction: column;

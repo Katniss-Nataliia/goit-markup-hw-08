@@ -13,6 +13,8 @@
     color: $section-titles-color;
     margin-bottom: 12px;
     padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .contact-form__label{
@@ -126,9 +128,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $description-color;
-    text-decoration: none;
 }
-
+.agree__terms-and-conditions-link{
+    color: $active-and-hover-color;
+}
 
 .send {
     position: relative;
