@@ -940,7 +940,7 @@ header {
 @media screen and (min-width: 768px) {
   .team-members {
     flex-basis: 50%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -963,14 +963,8 @@ header {
   .team-members__item:nth-child(3) {
     margin-bottom: 0;
   }
-  .team-members__item > img {
-    width: 345px;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .team-members__item > img {
-    width: 270px;
-  }
   .team-members__item:last-child {
     margin-bottom: 30px;
   }

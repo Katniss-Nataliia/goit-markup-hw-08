@@ -39,7 +39,7 @@
 
     @media screen and (min-width: 768px){
         flex-basis: calc(100% / 2);
-        justify-content: space-between;
+        justify-content: space-around;
     }
     @media screen and (min-width: 1200px){
         flex-wrap: nowrap;
@@ -63,16 +63,12 @@
         &:nth-child(3){
             margin-bottom: 0;
         }
-        & > img{
-            width: 345px;
-        }
+  
     
         
     }
     @media screen and (min-width: 1200px){
-        & > img{
-        width:270px;
-        }
+   
         &:last-child{
             margin-bottom: 30px;
         }
