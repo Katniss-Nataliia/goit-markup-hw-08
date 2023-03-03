@@ -8,9 +8,12 @@
 }
 .brand{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-wrap: wrap;
-    
+    @media screen and (min-width:480px){
+        justify-content:space-between;
+        
+    }
     @media screen and (min-width: 768px){
         flex-basis: calc(100% / 3);
     }
@@ -22,8 +25,13 @@
 
 .brand__item{
     margin-bottom: 30px;
-    &:last-child,
-    &:nth-child(5){
+    &:last-child{
         margin-bottom: 0;
     }
+    @media screen and (min-width: 480px){
+        &:nth-child(5){
+            margin-bottom: 0;
+        }
+    }
+    
 }
